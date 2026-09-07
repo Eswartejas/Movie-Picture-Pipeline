@@ -35,7 +35,7 @@ jobs:
           key: pipenv-${{ hashFiles('starter/backend/Pipfile.lock') }}
 
       - name: Install dependencies
-        run: pipenv install
+        run: pipenv install --dev
 
       - name: Run lint
         run: pipenv run lint
@@ -66,7 +66,7 @@ jobs:
           key: pipenv-${{ hashFiles('starter/backend/Pipfile.lock') }}
 
       - name: Install dependencies
-        run: pipenv install
+        run: pipenv install --dev
 
       - name: Run tests
         run: pipenv run test

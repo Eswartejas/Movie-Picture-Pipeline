@@ -11,7 +11,7 @@ on:
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: frontend
-  REACT_APP_MOVIE_API_URL: http://localhost:5000
+  REACT_APP_MOVIE_API_URL: http://a1c5d6ffc1e44445b94ae22e4b35e146-455780531.us-east-1.elb.amazonaws.com
 
 jobs:
   lint:
